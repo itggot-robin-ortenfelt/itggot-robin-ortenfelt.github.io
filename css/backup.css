@@ -1,0 +1,482 @@
+/* background */
+body{
+    margin: 0px;
+    overflow-x: hidden;   
+}
+
+/* ------ text --------*/
+p {font-family: 'Roboto', sans-serif;}
+h3 {font-family: 'Open Sans', sans-serif;}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 5px;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+}
+h4 {font-family: 'Open Sans Condensed', sans-serif;}
+
+/* nav */
+nav{
+    grid-area: nav;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin: 0px;
+}
+.menu_button{
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    margin: 3px 5px;
+    border-radius: 30px;   
+}
+
+.search_txtarea{
+    grid-area: search;
+    background-color: rgb(241, 241, 241);
+    width: 100vw;
+    overflow: hidden;
+    border: none;
+    border-bottom-color: rgb(255, 0, 0);
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+ 
+}
+
+/* --------page one---------- */
+#index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 65px 1fr 1fr 1fr 2fr;
+    background-image: url('../img/small_background.jpeg');
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0px;
+    grid-template-areas:
+    "nav nav"
+    "look look"
+    "sale_art sale_art"
+    "sale sale"
+    "main main"
+}
+
+.new_h1{
+    color: red;
+    text-align: center;
+    margin: 0px;
+    border-bottom: solid 4px gray;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+}
+.look_flex{
+    grid-area: look;
+    margin: 20px;
+    margin-bottom: 0px;
+    height: 100%;
+    
+}
+.look_flex > a {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border: solid 20px black;
+    padding: 10px;
+    text-decoration: none;
+}
+.look_a1{
+    background-image: url('../img/main_collection.jpg'); 
+    width: 250px;
+    height: 65vh;
+}
+.look_a2{
+    background-image: url('../img/slide_collection1.jpg'); 
+    width: 250px;
+    height: 65vh;
+}
+.look_a3{
+    background-image: url('../img/slide_collection1.jpg'); 
+    width: 250px;
+    height: 65vh;
+}
+.look_a4{
+    background-image: url('../img/main_collection.jpg'); 
+    width: 250px;
+    height: 65vh;
+}
+
+.sale_article{
+    grid-area: sale_art;
+    margin: 0px;
+}
+.sale_h1{
+    color: red;
+    text-align: center;
+    border-bottom: solid 4px gray;
+    border-radius: 2px;
+    padding-bottom: 4px;
+}
+.sale_flex{
+    grid-area: sale;
+    width: 200vw;
+    height: 21vh;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.sale_flex > div {
+    height: 20vh;
+    margin: 0px 10px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    background-color: indigo;
+}
+.bracelet_img{
+    background: url('../img/bracelet_sale.jpg'); 
+    background-size: contain;
+    margin: 5px;
+}
+#main{
+    display: grid;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50px 22% 1fr 1fr 22%;
+    width: 100vw;
+    height: 160vh;
+    margin: 0px;
+    grid-template-areas:
+    "search search"
+    "bra bra"
+    "fli gla"
+    "ank gla"
+    "hat hat"
+}
+#main > a{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+}
+.bracelet_a{
+    grid-area: bra;
+    background-image: url('../img/bracelet2.jpg'); 
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+}
+.hat_a{
+    grid-area: hat;
+    background-image: url('../img/sunhat.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 2.5px 5px 5px 5px;
+}
+.glasses_a{
+    grid-area: gla;
+    background-image: url('../img/glasses.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0px 5px 2.5px 2.5px;
+}
+.anklet_a{
+    grid-area: ank;
+    background-image: url('../img/anklet.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 2.5px 2.5px 2.5px 5px;
+}
+.flipflop_a{
+    grid-area: fli;
+    background-image: url('../img/flipflop.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0px 2.5px 2.5px 5px;
+}
+
+
+/* page two */
+#second{
+    display: grid;
+    background-color: darkcyan;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 65px 1fr;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    grid-template-areas:
+    "nav nav"
+    "main main"
+   
+}
+.main_flex {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+.main_flex > div {
+  background-color: #f1f1f1;
+  width: 170px;
+  height: 190px;
+  margin: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* third */
+#third{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 70px 200px 200px 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    overflow-x: hidden;
+    grid-template-areas:
+    "nav nav"
+    "search search"
+    "big big"
+    "sml sml"
+    "size size"
+    "color color"
+    "price buy"
+}
+ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: row; 
+    width: 100vw;
+    list-style-type: none;
+    text-align: center;
+}
+.main_img{
+    grid-area: big;
+    background-color: rgb(0, 62, 90);
+    height: 100%;
+    width: 98vw;
+    margin: 1px 4px;  
+}
+
+#smallimg_ul{ 
+    grid-area: sml;
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#smallimg_ul > li{
+    margin: 0% 5%;
+    height: 10vh;
+    width: 20vw;
+}
+.smlimg1{
+    grid-area: smlimg1;
+    background-color: blueviolet;
+}
+.smlimg2{
+    grid-area: smlimg2;
+    background-color: aqua;
+}
+.smlimg3{
+    grid-area: smlimg3;
+    background-color: rebeccapurple;
+}
+
+#size_ul{
+   grid-area: size; 
+}
+#size_ul > li{
+   margin: 2%; 
+   width: 40px;
+   height: 40px;
+ }
+.size1_div{
+    grid-area: button1;
+    background-color: rgb(0, 81, 92);
+}
+.size2_div{
+    grid-area: button2;
+    background-color: hotpink;
+}
+.size3_div{
+    grid-area: button3;
+    background-color: lawngreen;
+}
+.size4_div{
+    grid-area: button4;
+    background-color: sienna;
+}
+
+#color_ul{
+  grid-area: color;
+}
+#color_ul > li{
+    margin: 2%; 
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.color1_div{
+    grid-area: color1;
+    background-color: salmon;
+}
+.color2_div{
+    grid-area: color2;
+    background-color: rgb(66, 5, 85);
+}
+.color3_div{
+    grid-area: color3;
+    background-color: orange;
+}
+.color4_div{
+    grid-area: color4;
+    background-color: orangered;
+}
+.price{
+    grid-area: price;
+    background-color: navy;
+    width: 50%;
+}
+.buy{
+    grid-area: buy;
+    background-color: olive;
+    border: none;
+    align-content: flex-end;
+}
+
+/* --------- Collection ----------*/
+
+#collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 65px 1fr;
+    height: 100vh;
+    margin: 0px;
+    grid-template-areas:
+    "nav nav"
+    "collection collection"
+}
+.collection_flex {
+    grid-area: collection;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+.collection_flex > div {
+  background-color: #f1f1f1;
+  width: 170px;
+  height: 350px;
+  margin: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
