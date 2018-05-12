@@ -24,7 +24,11 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
 }
-h4 {font-family: 'Open Sans Condensed', sans-serif;}
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    font-size: 100%;
+}
 
 /* nav */
 nav{
@@ -61,7 +65,7 @@ nav{
 #index{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 65px 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-auto-rows: 65px 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
     background-image: url('../img/small_background.jpeg');
     background-size: cover;
     width: 100%;
@@ -76,6 +80,7 @@ nav{
     "sale_art sale_art"
     "sale sale"
     "main main"
+    "foot foot"
 }
 
 .new_art{
@@ -221,7 +226,67 @@ nav{
     background-position: center;
     margin: 0px 2.5px 2.5px 5px;
 }
-
+.grid_footer{
+    grid-area: foot;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    height: 50vh;
+    margin: 0px;
+    grid-template-areas:
+    "contact . . sam"
+    "snap helpp . ."
+    ". insta legal ."
+    ". . face fag"
+    "social . . twit"
+}
+.grid_footer > div{
+    width: 20px;
+    margin: 5px;
+    justify-self: center;
+}
+.foter_sam{
+    grid-area: sam;
+    background-color: blueviolet;
+}
+.foter_contact{
+ grid-area: contact;
+ background-color: red;
+}
+.foter_help{
+    grid-area: helpp; 
+    background-color: red;
+}
+.foter_legal{
+    grid-area: legal;
+    background-color: red;
+}
+.foter_fag{
+    grid-area: fag;
+    background-color: red;
+}
+.div_snap{
+    grid-area: snap;
+    background-color: blue;
+}
+.div_insta{
+    grid-area: insta;
+    background-color: blue;
+}
+.div_face{
+    grid-area: face;
+    background-color: blue;
+}
+.div_twit{
+    grid-area: twit;
+    background-color: blue;
+}
+.div_social{
+    grid-area: social;
+    background-color: blueviolet;
+}
 
 /* page two */
 #second{
@@ -245,12 +310,24 @@ nav{
   }
 .main_flex > div {
   background-color: #f1f1f1;
+  background-size: cover;
+  background-position: center;
   width: 170px;
   height: 190px;
   margin: 5px;
   text-align: center;
   font-size: 30px;
 }
+.div_flex1{
+    background-image: url('../img/bracelet_example1.jpg'); 
+}
+.div_flex2{
+    background-image: url('../img/bracelet_example2.jpeg'); 
+}
+.div_flex3{
+    background-image: url('../img/bracelet_example3.jpeg'); 
+}
+
 
 
 /* third */
