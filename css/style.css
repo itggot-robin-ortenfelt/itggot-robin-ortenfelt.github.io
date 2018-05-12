@@ -29,7 +29,18 @@ h4 {
     color: white;
     font-size: 100%;
 }
+h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.582);
 
+    text-decoration: none;
+    position: relative;
+    align-self: bottom;
+    bottom: 0px;
+}
 /* nav */
 nav{
     grid-area: nav;
@@ -303,30 +314,24 @@ nav{
    
 }
 .main_flex {
+    margin: 0px;
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
     background-color: DodgerBlue;
   }
-.main_flex > div {
-  background-color: #f1f1f1;
+.main_flex > a {
+
+  background-image: url('../img/bracelet_example5.jpg');
   background-size: cover;
-  background-position: center;
-  width: 170px;
-  height: 190px;
-  margin: 5px;
+  background-position: bottom;
+  width: 49vw;
+  height: 200px; 
   text-align: center;
   font-size: 30px;
+  margin: 0.5vw;
 }
-.div_flex1{
-    background-image: url('../img/bracelet_example1.jpg'); 
-}
-.div_flex2{
-    background-image: url('../img/bracelet_example2.jpeg'); 
-}
-.div_flex3{
-    background-image: url('../img/bracelet_example3.jpeg'); 
-}
+
 
 
 
