@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 
     });
-    
+/* Slide */
 var myIndex = 0;
 carousel();
 
@@ -36,6 +36,20 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 8000);    
 }
+
+/*nav*/
+$('.hamburger').clickToggle(function () {
+    $('#navclick').animate({
+        left: "0%"
+    }, 100);
+    $('.overlay').toggleClass('overlayactive');
+},
+    function () {
+        $('#navclick').animate({
+            left: "-70%"
+        }, 200);
+        $('.overlay').toggleClass('overlayactive');
+    });
 
 });
 
